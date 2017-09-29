@@ -1,11 +1,11 @@
 Get Started
 ======================
 
-A typical FindFace Enterprise Server SDK-based biometric system is shown
+A typical Miracle-based biometric system is shown
 on the diagram below:
 
-FindFace Enterprise Server SDK consists of the Biometric Data Analysis and Recognition Server (hereinafter referred to as FindFace Server or
-Server) and, optionally, the video face detector. Besides the latter, you can also install the other additional components. The FindFace Server
+Miracle consists of the Biometric Data Analysis and Recognition Server (hereinafter referred to as Miracle Server or
+Server) and, optionally, the video face detector. Besides the latter, you can also install the other additional components. The Miracle Server
 functioning is provided by interaction of the following components: 
 
 +------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -25,7 +25,7 @@ functioning is provided by interaction of the following components: 
 +------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-Follow the diagram below to deploy FindFace Enterprise Service SDK and
+Follow the diagram below to deploy Miracle and
 get ready for delivering face recognition services to your customers.
 
 
@@ -34,7 +34,7 @@ get ready for delivering face recognition services to your customers.
 #. Choose deployment architecture
 #. Prepare hardware
 #. Install prerequisites
-#. Install FindFace Enterprise Server SDK
+#. Install Miracle
 #. Create a token and test the system work
 #. Configure video face detection
 #. Increase performance by setting up `nginx load
