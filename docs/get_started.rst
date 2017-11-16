@@ -6,7 +6,7 @@ Get Started
 
 Here you can see a typical biometric system based on FindFace Enterprise Server SDK:
 
-.. ifconfig:: language is 'en'
+.. only:: en
 
     .. image:: https://gcc-elb-public-prod.gliffy.net/embed/image/4090da7b962be0327d893afdcd000b54.png
 
