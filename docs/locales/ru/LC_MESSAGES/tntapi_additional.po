@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NtechLab
+# This file is distributed under the same license as the FindFace Enterprise
+# Server SDK package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Enterprise Server SDK 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-16 13:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../source/tntapi_additional.rst:4
+msgid "Hacks for ``tntapi``"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:7
+msgid "In this section:"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:13
+msgid "Additional Configuration Parameters"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:15
+msgid ""
+"To configure interaction between findface-facenapi and Tarantool, specify"
+" additional parameters in the 3rd argument of the ``FindFace.start`` "
+"section in the tntapi configuration file:"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:28
+msgid "Additional parameters:"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:30
+msgid "Parameter"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:30
+msgid "Default value"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:30
+msgid "Description"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:32
+msgid "log\\_requests"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:32
+msgid "true"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:32
+msgid "Enable request logging (/var/log/tarantool/FindFace.log)."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:34
+msgid "facen\\_size"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:34
+msgid "320"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:34
+msgid ""
+"Facen's size. Before editing this parameter, be sure to consult NTechLab "
+"experts."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:36
+msgid "search\\_threads"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:36
+msgid "1"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:36
+msgid "Number of threads for fast index search."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:38
+msgid "replication"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:38
+msgid "nil"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:38
+msgid "Only for a replica. Master instance IP address."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:40
+msgid "soft\\_delete\\_mode"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:40
+msgid "false"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:40
+msgid ""
+"Enable the soft deletion mode, when the faces are not removed from the "
+"fast index, but hidden in search results."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:44
+msgid "Soft Deletion Mode"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:46
+msgid ""
+"Tarantool supports the soft deletion mode, when the faces are not removed"
+" from the fast index, but hidden in search results. We recommend you to "
+"enable this mode due to the following benefits:"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:48
+msgid ""
+"Tarantool starting time linearly depends on the number of faces removed "
+"from the ``Indexed`` space (fast index). If the soft deletion mode is on,"
+" the faces are not physically removed from the fast index, so face "
+"deletion doesn't affect the starting time."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:49
+msgid ""
+"Fast index search quality also depends on the number of physically "
+"removed faces. It doesn't sink in the soft deletion mode."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:51
+msgid ""
+"To enable the soft deletion mode, edit the FindFace.start section as "
+"follows:"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:58
+msgid "Tarantool Replication"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:60
+msgid ""
+"Replication allows multiple Tarantool instances to work on copies of the "
+"same face database. The database copies are kept in sync because each "
+"instance can communicate its changes to all the other instances. "
+"Tarantool supports master-slave replication. You can add and delete data "
+"only by using the master instance, slave instances (aka replicas) are "
+"read-only, i.e. can be used only for searching and consulting data."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:64
+msgid ""
+"To learn how to deploy a Tarantool replica set, refer to the Tarantool "
+"`official documentation <https://tarantool.org/en/doc/1.7/singlehtml.html"
+"#document-doc/1.7/book/replication/index>`__."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:66
+msgid "To start a created replica for the first time, do the following:"
+msgstr ""
+
+#: ../source/tntapi_additional.rst:68
+msgid "Start the master instance."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:69
+msgid ""
+"In the replica configuration file, specify the IP address and listening "
+"port of the master instance."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:75
+msgid ""
+"Copy the latest snapshot (.snap) of the master instance into the "
+"``memtx_dir`` directory of the replica."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:82
+msgid ""
+"Copy the master instance logs into the ``wal_dir`` directory of the "
+"replica."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:89
+msgid ""
+"Start the replica. You can start as many replicas affiliated with the "
+"same master instance as needed."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:92
+msgid ""
+"Before enabling the :ref:`fast index <fast-index>` for the master "
+"instance ``:use_index(\"/path/to/<index>.idx\")``, copy the index file "
+"(``<index>.idx``) to the same path on its replica. Then perform "
+"``use_index`` on the master instance."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:95
+msgid ""
+"Delete obsolete index files on the replica in order to avoid unnecessary "
+"index transitions, should the master instance and replica be heavily out "
+"of sync."
+msgstr ""
+
+#: ../source/tntapi_additional.rst:98
+msgid ""
+"To synchronize the master instance and replica, you can also copy the "
+"latest master snapshot to the replica."
+msgstr ""
+

@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NtechLab
+# This file is distributed under the same license as the FindFace Enterprise
+# Server SDK package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Enterprise Server SDK 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-16 13:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../source/fkvideo_deploy.rst:2
+msgid "Configure and Start Video Face Detection"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:4
+msgid ""
+"This section will guide you through the :program:`fkvideo_detector` "
+"deployment process. Follow the steps below minding the sequence."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:7
+msgid ""
+"The fkvideo_detector component has to be :ref:`installed <fkvideo-"
+"install>`."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:10
+msgid "In this section:"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:18
+msgid "Specify Video Streams"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:20
+msgid "To specify video streams for face detection, do the following:"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:22
+msgid ""
+"Make a copy of the configuration file ``/etc/fkvideo.ini``. Open the new "
+"file for editing."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:29
+msgid "If you have only one camera, you can add it in the new configuration file."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:70
+msgid ""
+"You can find an example of the configuration file `here "
+"<https://raw.githubusercontent.com/NTech-Lab/FFSER-file-"
+"examples/master/fk_local_config.ini>`__."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:72
+msgid ""
+"If you have more than one camera, use the Server to store all your "
+"cameras. Add your camera to server by POST request v1/camera. For    "
+"example, add camera to detector=detec1:"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst
+msgid "Request"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst
+msgid "Response"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:88
+msgid ""
+"Now edit your configuration file. For example, detector will connect to "
+"server, and get all cameras with detector=detec1"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:129
+msgid ""
+"You can find an example of the configuration file `here "
+"<https://raw.githubusercontent.com/NTech-Lab/FFSER-file-"
+"examples/master/fk_server_config.ini>`__."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:133
+msgid "Start Component as Application"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:135
+msgid "To start fkvideo_detector as an application, execute:"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:141
+msgid "Use this method for testing purposes."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:145
+msgid "Start Component as Service"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:147
+msgid "To run the face detection component as a service, do the following:"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:149
+msgid "Execute the following command:"
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:155
+msgid ""
+"Check service status. The command will return a service description, a "
+"status should be active (running)."
+msgstr ""
+
+#: ../source/fkvideo_deploy.rst:162
+msgid "You can get the list of your cameras by the following request:"
+msgstr ""
+
+#~ msgid ""
+#~ "If you have more than one camera,"
+#~ " use the Server to store all "
+#~ "your cameras. Add your camera to server"
+#~ " by POST request v0/camera. For    "
+#~ "example, add camera to detector=detec1:"
+#~ msgstr ""
+

@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NtechLab
+# This file is distributed under the same license as the FindFace Enterprise
+# Server SDK package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Enterprise Server SDK 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-16 13:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../source/stats.rst:4
+msgid "Shard Galleries Statistics"
+msgstr ""
+
+#: ../source/stats.rst:6
+msgid ""
+"You can get a shard galleries statistics and other data right in your "
+"browser. This functionality can be harnessed in monitoring systems."
+msgstr ""
+
+#: ../source/stats.rst:9
+msgid ""
+"In the case of standalone deployment, you can access Tarantool by default"
+" only locally (127.0.0.1). If you want to access Tarantool remotely, "
+":ref:`change <tntapi-standalone>` the Tarantool configuration file."
+msgstr ""
+
+#: ../source/stats.rst:12
+msgid "In this section:"
+msgstr ""
+
+#: ../source/stats.rst:18
+msgid "List Galleries"
+msgstr ""
+
+#: ../source/stats.rst:20
+msgid "To list all galleries on a shard, type in the address bar of your browser:"
+msgstr ""
+
+#: ../source/stats.rst:26
+msgid ""
+"``:start`` is the number of a gallery the list starts with. ``:limit`` is"
+" the maximum number of galleries in the list."
+msgstr ""
+
+#: ../source/stats.rst:30 ../source/stats.rst:87
+msgid "Example"
+msgstr ""
+
+#: ../source/stats.rst:32 ../source/stats.rst:89
+msgid "Request"
+msgstr ""
+
+#: ../source/stats.rst:41 ../source/stats.rst:96
+msgid "Response"
+msgstr ""
+
+#: ../source/stats.rst:76
+msgid "Get Gallery Information"
+msgstr ""
+
+#: ../source/stats.rst:78
+msgid "To get a gallery information, type in the address bar of your browser:"
+msgstr ""
+
+#: ../source/stats.rst:84
+msgid "``:name`` is the gallery name."
+msgstr ""
+

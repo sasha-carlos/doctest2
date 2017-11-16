@@ -1,43 +1,39 @@
+.. _start:
+
+****************
 Get Started
-======================
+****************
 
-A typical Miracle-based biometric system is shown
-on the diagram below:
+Here you can see a typical biometric system based on FindFace Enterprise Server SDK:
 
-Miracle consists of the Biometric Data Analysis and Recognition Server (hereinafter referred to as Miracle Server or
-Server) and, optionally, the video face detector. Besides the latter, you can also install the other additional components. The Miracle Server
-functioning is provided by interaction of the following components: 
+.. ifconfig:: language is 'en'
 
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Service                                  | Description                                                                                                                                                                                               |
-+==========================================+===========================================================================================================================================================================================================+
-| findface-facenapi                        | Python daemon which runs HTTP API. This daemon executes face detection functions, interfaces with MongoDB and findface-nnapi and tarantool@FindFace daemons.                                              |
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| tntapi (tarantool@FindFace as a shard)   | Daemon which enables interaction with the face descriptors index.                                                                                                                                         |
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| findface-nnapi                           | Daemon extracts a feature vector (based on neural network). Requires the package with models <findface-data>.deb.                                                                                         |
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| MongoDB                                  | Database which stores faces metadata, galleries details, settings, etc.                                                                                                                                   |
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| findface-upload                          | Nginx web server used to receive images using WebDAV.                                                                                                                                                     |
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| NTLS                                     | Local license server which interfaces with the Global NTechLab License Server (for the network licensing) or a USB dongle (for the on-premise licensing) and passes a license to licensable components.   |
-+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    .. image:: https://gcc-elb-public-prod.gliffy.net/embed/image/4090da7b962be0327d893afdcd000b54.png
+
+.. ifconfig:: language is 'ru'
+
+    .. image:: https://gcc-elb-public-prod.gliffy.net/embed/image/f1b08549cded1c086b2e1af7aacf0e5b.png
 
 
-Follow the diagram below to deploy Miracle and
-get ready for delivering face recognition services to your customers.
+FindFace Enterprise Server SDK consists of the :program:`Biometric Data Analysis and Recognition Server` (:program:`FindFace Server` or :program:`Server` hereinafter) and, optionally, the video face detector and other :ref:`additional components <extra-functionality>`. 
 
+The FindFace Server functioning is provided by interaction of the following components: 
 
-**The 9 steps to face recognition:**
+.. csv-table::
+   :header: "Component", "Description"
+   :widths: 15 40
+   :file: _tables/components.csv
+   :encoding: UTF-8
+   :delim: ;
 
-#. Choose deployment architecture
-#. Prepare hardware
-#. Install prerequisites
-#. Install Miracle
-#. Create a token and test the system work
-#. Configure video face detection
-#. Increase performance by setting up `nginx load
-   balancing and fast index
-#. Add advanced features
-#. Finalize the system with coding
+Follow the **9 steps** below to start delivering face recognition services to your customers:
+
+#. :ref:`Choose deployment architecture <architecture>`
+#. :ref:`Prepare hardware <requirements>`
+#. :ref:`Install prerequisites <prerequisites>`
+#. :ref:`Install FindFace Server <install-server>`
+#. :ref:`Create a token <token>` and :ref:`test the system work <test>`
+#. :ref:`Configure video face detection <video>`
+#. Increase performance by setting up :ref:`nginx load balancing <load-balancing>` and :ref:`fast index <fast-index>`
+#. :ref:`Add advanced features <advanced>`
+#. :ref:`Finalize the system with coding <api>`

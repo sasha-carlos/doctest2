@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NtechLab
+# This file is distributed under the same license as the FindFace Enterprise
+# Server SDK package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Enterprise Server SDK 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-16 13:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../source/regenerate_facens.rst:4
+msgid "Migrate to Different Detector or Model"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:7
+msgid "Do not hesitate to contact our experts on migration by info@ntechlab.com."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:10
+msgid ""
+"Sometimes you have to migrate your FindFace Enterprise Server SDK "
+"instance to another face detector or neural network model. This usually "
+"happens when you decide to update to the latest version of the product."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:13
+msgid "You can find the models summary :ref:`here <models>`."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:15
+msgid ""
+"If you need to re-detect faces, you should regenerate both normalized "
+"face images, thumbnails and facens. If you just want to apply a different"
+" model, it usually suffices to regenerate only facens. FindFace "
+"Enterprise Server SDK provides tools that can handle most migration use "
+"cases."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:18
+msgid ""
+"Different detectors have diverse sensitivity to certain facial features. "
+"Be aware that, after re-detecting your database, you may miss out on some"
+" previously found faces."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:21
+msgid "In this section:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:27
+msgid "Tools"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:29
+msgid "To migrate your instance, you will need the following tools:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:35
+msgid "Tool"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:36
+msgid "Description"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:37
+msgid "``findface-regenerate``"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:38
+msgid ""
+"Script that regenerates and overrides face data in MongoDB by applying "
+"different detector settings or another model to the images in the "
+"``Uploads`` folder."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:39
+msgid "``mongo2searchapi``"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:40
+msgid "Script that transfers newly generated facens from MongoDB to Tarantool."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:42
+msgid ""
+"Both tools are automatically installed with :ref:`findface-facenapi "
+"<install-facenapi>`."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:45
+msgid "Requirements"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:47
+msgid ""
+"The ``/var/lib/ffupload/uploads/`` folder (``Uploads``) has to be "
+"populated with at least the original images. Its content can be viewed at"
+" ``http://<findface_upload_IP:3333/uploads/`` in your browser."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:49
+msgid ""
+"Overall, the ``findface-regenerate`` tool works with the ``Uploads`` "
+"folder in the following way:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:55
+msgid "Use case"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:56
+msgid "How it works"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:57
+msgid "Different detector settings"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:58
+msgid ""
+"The ``findface-regenerate`` tool runs original images through the "
+"``facenapi``-``nnapi`` pipeline with different detector [and model] "
+"settings, and returns regenerated normalized images, thumbnails and "
+"facens."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:59
+msgid "Different model"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:60
+msgid ""
+"The ``findface-regenerate`` tool runs normalized face images through "
+"``nnapi`` with different model settings, and returns regenerated facens."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:64
+msgid "Regenerate Face Data"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:67
+msgid ""
+"Before conducting any operations on your MongoDB database, be sure to "
+"create its backup."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:69
+msgid "Apply ``findface-regenerate`` as follows:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:71
+msgid ""
+"Navigate into ``/usr/bin/``. Display and thoroughly examine the "
+"``findface-regenerate`` help message:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:187
+msgid ""
+"To change detector settings, uncomment and edit the detector-related "
+"parameters in the ``findface-facenapi`` configuration file."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:196
+msgid ""
+"To switch the face biometric :ref:`model <models>`, edit the "
+"``model_facen`` parameter in the ``findface-nnapi`` configuration file:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:204
+msgid ""
+"Configure ``findface-regenerate`` by using command line arguments as "
+"described in the help message. For example, to switch the face detector, "
+"execute from ``/usr/bin``:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:210
+msgid "To switch the model, execute::"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:216
+msgid "Transfer Facens from MongoDB to Tarantool"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:218
+msgid "Apply ``mongo2searchapi`` as follows:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:220
+msgid "Create a backup for Tarantool."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:221
+msgid "Stop Tarantool."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:227
+msgid ""
+"Delete snapshot ``.snap``, xlog ``.xlog`` and :ref:`fast index <fast-"
+"index>` ``.idx`` files for all tntapi shards."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:230
+msgid "By default, these files are stored in the following folders:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:232
+msgid "Standalone instance:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:234
+msgid "``/opt/ntech/var/lib/tarantool/default/snapshots``"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:235
+msgid "``/opt/ntech/var/lib/tarantool/default/xlogs``"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:236
+msgid "``/opt/ntech/var/lib/tarantool/default/index``"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:238
+msgid "Cluster instance:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:240
+msgid ":samp:`/opt/ntech/var/lib/tarantool/shard_{N}/snapshots`"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:241
+msgid ":samp:`/opt/ntech/var/lib/tarantool/shard_{N}/xlogs`"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:242
+msgid ":samp:`/opt/ntech/var/lib/tarantool/shard_{N}/index`"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:244
+msgid ""
+"If facens :ref:`differ in size <models>` for the old and new models, "
+"update the facen size in the ``FindFace.start`` section of the Tarantool "
+"configuration file "
+":samp:`/etc/tarantool/instances.enabled/FindFace_{shard_N}.lua`. Do so "
+"for each shard."
+msgstr ""
+
+#: ../source/regenerate_facens.rst:252
+msgid "Run ``mongo2searchapi`` on the ``findface-facenapi`` host:"
+msgstr ""
+
+#: ../source/regenerate_facens.rst:258
+msgid "Start Tarantool"
+msgstr ""
+
+#~ msgid ""
+#~ "To change a face biometric :ref:`model"
+#~ " <models>`, edit the ``model_facen`` "
+#~ "parameter in the ``findface-nnapi`` "
+#~ "configuration file:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configure ``findface-regenerate`` by using "
+#~ "command line arguments as described in"
+#~ " the help message. To run the "
+#~ "script, execute from ``/usr/bin``:"
+#~ msgstr ""
+

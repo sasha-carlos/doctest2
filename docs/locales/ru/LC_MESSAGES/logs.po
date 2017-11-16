@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NtechLab
+# This file is distributed under the same license as the FindFace Enterprise
+# Server SDK package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Enterprise Server SDK 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-08 12:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../source/logs.rst:4
+msgid "Analyze Log Files"
+msgstr ""
+
+#: ../source/logs.rst:6
+msgid ""
+"Log files provide a complete record of each FindFace Enterprise Server "
+"SDK component activity."
+msgstr ""
+
+#: ../source/logs.rst:9
+msgid "findface-facenapi"
+msgstr ""
+
+#: ../source/logs.rst:15
+msgid "The findface-facenapi log contains the following time values:"
+msgstr ""
+
+#: ../source/logs.rst:16
+msgid ""
+"``1114`` — total response time (FindFace Enterprise Server SDK components"
+" + MongoDB + Python),"
+msgstr ""
+
+#: ../source/logs.rst:17
+msgid "``487`` — face detection time,"
+msgstr ""
+
+#: ../source/logs.rst:18
+msgid "``241`` — findface-nnapi response time,"
+msgstr ""
+
+#: ../source/logs.rst:19
+msgid "``12`` — tntapi response time."
+msgstr ""
+
+#: ../source/logs.rst:24
+msgid "findface-nnapi"
+msgstr ""
+
+#: ../source/logs.rst:32
+msgid "fkvideo_detector"
+msgstr ""
+
+#: ../source/logs.rst:38
+msgid "extraction-api"
+msgstr ""
+
+#: ../source/logs.rst:45
+msgid "Load-balanced service"
+msgstr ""
+
+#: ../source/logs.rst:53
+msgid "Tarantool"
+msgstr ""
+
